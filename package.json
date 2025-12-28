@@ -1,0 +1,77 @@
+{
+  "name": "@zos-apps/facetime",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "zos": {
+    "id": "ai.hanzo.facetime",
+    "name": "FaceTime",
+    "icon": "📹",
+    "category": "communication",
+    "description": "Video calling application",
+    "permissions": [],
+    "window": {
+      "defaultSize": {
+        "width": 640,
+        "height": 480
+      },
+      "resizable": true
+    },
+    "about": "Video calling application",
+    "screenshots": {
+      "hero": "screenshots/hero.png",
+      "images": [
+        "screenshots/1-main.png"
+      ]
+    },
+    "downloads": {
+      "web": "https://zos-apps.github.io/facetime"
+    },
+    "featured": false,
+    "tags": [
+      "communication",
+      "facetime"
+    ],
+    "releaseDate": "2025-12-28",
+    "support": "https://github.com/zos-apps/facetime/issues",
+    "changelog": "https://github.com/zos-apps/facetime/releases"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "description": "Video calling application",
+  "homepage": "https://zos-apps.github.io/facetime",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zos-apps/facetime.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zos-apps/facetime/issues"
+  },
+  "author": "Hanzo AI",
+  "license": "MIT",
+  "keywords": [
+    "zos",
+    "app",
+    "facetime",
+    "macos",
+    "desktop"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
