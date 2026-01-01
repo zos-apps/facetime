@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Video, Phone, Mic, MicOff, VideoOff, PhoneOff, Plus, Search } from 'lucide-react';
+import { useState } from 'react';
+import { Video, Phone, Mic, MicOff, VideoOff, PhoneOff, Search } from 'lucide-react';
 
 interface FaceTimeProps {
   onClose: () => void;}
@@ -20,7 +20,7 @@ const recentCalls: RecentCall[] = [
   { id: '4', name: 'Mom', avatar: 'M', time: 'Dec 20', type: 'video', missed: false },
 ];
 
-const FaceTime: React.FC<FaceTimeProps> = ({ onClose }) => {
+const FaceTime: React.FC<FaceTimeProps> = ({ onClose: _onClose }) => {
   const [isInCall, setIsInCall] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const [isVideoOff, setIsVideoOff] = useState(false);
